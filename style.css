@@ -1,0 +1,298 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.signup, .forgot_password, .contact_us{
+    display: none;
+}
+body{
+    background: url(background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    display: flex;
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+    border: 3px solid rgb(255, 255, 255);
+    background: #98d6f7;
+    border-radius: 30px;
+    flex-direction: column;
+    padding: 20px 40px;
+} 
+.signup, .forgot_password, .contact_us {
+    display: flex;
+}
+
+.label{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #150f0f;
+    text-align: center;
+}
+.form-container .font {
+    font-size: 18px;
+    color: rgb(33, 31, 29);
+    margin: 5px 0px;
+}
+
+.form-container input,
+.form-container textarea {
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(6, 54, 109);
+    margin-bottom: 20px;
+}
+
+.form-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form-container .font2 {
+    margin-top: 30px;
+}
+
+.form-container button {
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #17364a;
+    border-radius: 3px;
+    border: 1px solid #1c1f26;
+    transition: .5s;
+}
+
+.form-container button:hover {
+    background: #030d17;
+}
+
+.form-container .email_error,
+.form-container .password_error {
+    margin-top: 5px;
+    width: 345px;
+    font-size: 17px;
+    color: #252a3b;
+    background: rgba(245, 241, 241, 0.92);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: #ec4842;
+    display: none;
+}
+
+
+.login-form{
+    padding: 20px 40px;
+}
+.login-form .font{
+    font-size: 18px;
+    columns: rgb(33, 31, 29);
+    margin: 5px 0px;
+}
+.login-form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(6, 54, 109);
+}
+.login-form .font2{
+    margin-top: 30px;
+}
+
+.login-form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #17364a;
+    border-radius: 3px;
+    border: 1px solid #1c1f26;
+    transition: .5s;
+}
+.login-form button:hover{
+    background: #030d17;
+}
+.login-form .email_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 17px;
+    color: #252a3b;
+    background: rgba(245, 241, 241, 0.92);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: #ec4842;
+    display: none;
+}
+.login-form .password_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 17px;
+    color: #252a3b;
+    background: rgba(24, 21, 21, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: #ec4842;
+    display: none;
+}
+
+.signup-form{
+    padding: 20px 40px;
+}
+.signup-form .font{
+    font-size: 18px;
+    columns: rgb(33, 31, 29);
+    margin: 5px 0px;
+}
+.signup-form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(6, 54, 109);
+}
+.signup-form .font2{
+    margin-top: 30px;
+}
+
+.signup-form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #17364a;
+    border-radius: 3px;
+    border: 1px solid #1c1f26;
+    transition: .5s;
+}
+.signup-form button:hover{
+    background: #030d17;
+}
+
+.forgot-password-form{
+    padding: 20px 40px;
+}
+.forgot-password-form .font{
+    font-size: 18px;
+    columns: rgb(33, 31, 29);
+    margin: 5px 0px;
+}
+.forgot-password-form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(6, 54, 109);
+}
+.forgot-password-form .font2{
+    margin-top: 30px;
+}
+
+.forgot-password-form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #17364a;
+    border-radius: 3px;
+    border: 1px solid #1c1f26;
+    transition: .5s;
+}
+.forgot-password-form button:hover{
+    background: #030d17;
+}
+
+.contact-us-form{
+    padding: 20px 40px;
+
+}    
+
+.contact-us-form .font{
+    font-size: 18px;
+    columns: rgb(33, 31, 29);
+    margin: 5px 0px;
+}
+.contact-us-form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(6, 54, 109);
+}
+.contact-us-form .font2{
+    margin-top: 30px;
+}
+
+.contact-us-form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #17364a;
+    border-radius: 3px;
+    border: 1px solid #1c1f26;
+    transition: .5s;
+}
+.contact-us-form button:hover{
+    background: #030d17;
+}
+ 
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #17364a;
+    text-decoration: none;
+    font-size: 18x;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #030d17;
+    text-decoration: underline;
+}
+h1.label {
+    margin-bottom: 20px;
+}
