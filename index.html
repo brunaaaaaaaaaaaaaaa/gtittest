@@ -17,14 +17,14 @@
 
     <div id="login" class="container active">
         <h1 class="label">Login</h1>
-        <form class="login-form" action="home.html" method="post" name="form" onsubmit="return validateLogin()">
+        <form class="login-form" name="form" onsubmit="validateLogin()">
             <div class="font">Enter your email</div>
             <input autocomplete="off" type="text" id="username" name="email">
             <div id="email_error">Please fill up your email</div>
             <div class="font2">Enter your password</div>
             <input type="password" id="pass" name="password">
             <div id="password_error">Please fill up your password</div>
-            <button type="submit" onclick="validateLogin()">Login</button>
+            <button type="submit">Login</button>
         </form>
         <div class="links">
             <div class="links">
@@ -33,9 +33,6 @@
             </div>
         </div>
     </div>
-
-
-
     <script>
         function showPage(pageId) {
             
@@ -53,7 +50,7 @@
             var password = document.getElementById('pass').value;
             if (email == 'login123@gmail.com' && password == 'login123') {
                 alert("Successful!");
-                window.location.assign('des.html');
+                window.location = 'home.html';
                 return true;
             } else {
                 alert("Wrong entry, invalid");
@@ -64,3 +61,12 @@
     
 </body>
 </html>
+
+
+<!-- To do 5 sept:
+-- fill up your email te dalin kur eshte bere submit dhe fusha eshte bluetooth_searching
+-- krijo nje folder assets ku ruaj foton background
+-- krijo nje folder (styles) ku ruan stylet, edhe merr te gjitha stylet nga
+-- krijo nje folder ku ruhen te gjitha skriptet (js) edhe ruaj te gjitha skriptet aty
+-- te bejme funksionale edhe signup dhe forget password dhe contact us duke mos perdorur actions por duke perdorur onsubmit 
+-- fshij filet qe nuk duhen -->
